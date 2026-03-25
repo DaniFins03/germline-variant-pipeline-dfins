@@ -1,2 +1,2 @@
 # germline-variant-pipeline-dfins
-workflow completo para análise de variantes germinativas, do fastq ao VCF.
+Workflow completo para análise de variantes germinativas, do fastq ao VCF.
