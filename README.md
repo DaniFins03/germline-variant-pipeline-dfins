@@ -157,21 +157,20 @@ ___
 
 %%bash
 
-NÃO DEFINI GENOMA!!! DEFINIR...
 echo "    Baixando refGene (genes de referência)..."
-perl annovar/annotate_variation.pl -buildver ${GENOMA} -downdb \
+perl annovar/annotate_variation.pl -buildver hg19 -downdb \
   -webfrom annovar refGene annovar/humandb
 
 echo "    Baixando gnomAD (frequências populacionais)..."
-perl annovar/annotate_variation.pl -buildver ${GENOMA} -downdb \
+perl annovar/annotate_variation.pl -buildver hg19 -downdb \
   -webfrom annovar gnomad_exome annovar/humandb
 
 echo "    Baixando REVEL (predições de patogenicidade)..."
-perl annovar/annotate_variation.pl -buildver ${GENOMA} -downdb \
+perl annovar/annotate_variation.pl -buildver hg19 -downdb \
   -webfrom annovar revel annovar/humandb
 
 echo "    Baixando ClinVar (significado clínico)..."
-perl annovar/annotate_variation.pl -buildver ${GENOMA} -downdb \
+perl annovar/annotate_variation.pl -buildver hg19 -downdb \
   -webfrom annovar clinvar_20200316 annovar/humandb
 
 echo ""
