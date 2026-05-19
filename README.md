@@ -73,10 +73,15 @@ Utilizar o código `apt-get install -y NOME_DA_FERRAMENTA` para baixar.
 Sendo elas:
 
 *   **BWA** = (Burrows-Wheeler Aligner). Ferramenta para **alinhamento** de sequências de DNA contra genoma de referência.
+  
 *   **SAMTOOLS** = **Conjunto de utilitários** para manipulação de arquivos *SAM/BAM* e indexação de *FASTA*.
+  
 *   **BCFTOOLS** = Conjunto de ferramentas **manipular e processar** arquivos *VCF/BCF* de forma moderna e eficiente.
+  
 *   **VCFTOOLS** = Conjunto de ferramentas para **filtragem e análise estatística** de variantes em arquivos *VCF*.
+  
 *   **BEDTOOLS** = Ferramenta de linha de comando para **trabalhar com regiões do genoma**. Permite *comparar, cruzar e analisar intervalos genômicos* por meio de operações entre arquivos como *BED, VCF e BAM.*
+
 
 | Ferramenta | Função |
 |------------|--------|
@@ -101,8 +106,11 @@ apt-get install -y bwa samtools bcftools vcftools bedtools
 
 
 *   **PICARD** = Conjunto de ferramentas usado para **organizar e corrigir** arquivos de alinhamento (SAM/BAM) antes da análise de variantes.
-*    **GATK** = "Genome Analysis Toolkit", conjunto de ferramentas que pega os dados alinhados do sequenciamento (BAM) e **procura diferenças** entre a amostra do paciente e o genoma de referência. 
+  
+*    **GATK** = "Genome Analysis Toolkit", conjunto de ferramentas que pega os dados alinhados do sequenciamento (BAM) e **procura diferenças** entre a amostra do paciente e o genoma de referência.
+  
 *   **ANNOVAR** = É um software de bioinformática usado para **anotar e priorizar** variantes genéticas, que cruza dados de sequenciamento de DNA com grandes bancos de dados para prever o seu **impacto funcional.**
+
 
 ```bash
   %%bash
@@ -149,9 +157,13 @@ ___
 
 
 *   **RefGene** = Banco de dados de genes de referência usado pelo ANNOVAR para **localizar e descrever** onde uma variante está no genoma.
+  
 *   **gnomAD** = Banco de **frequência populacional** usado para avaliar quão rara ou comum uma variante genética é na população humana.
+  
 *   **Revel** = Preditor in silico utilizado para estimar o **potencial patogênico de variantes missense**, por meio de scores previamente calculados.
+  
 *   **Clinvar** = Banco de dados clínico que reúne variantes genéticas e suas **classificações de significado clínico** (Patogênica, provavelmente patogênica, benigna, provavelmente benigna ou VUS)
+
 
 ```bash
 
