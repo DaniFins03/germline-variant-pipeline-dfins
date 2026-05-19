@@ -2055,3 +2055,7 @@ fi
 
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 ```
+
+# **FIM!**
+
+Você arrasou! Vamos caminhando juntos neste mundo Bioinformata! ❤️🧬
