@@ -100,9 +100,9 @@ apt-get install -y bwa samtools bcftools vcftools bedtools
  Diferentemente das outras, essas ferramentas possuem os seus respectivos arquivos em forma de URL, logo, a linha de comando usada para baixar é: `wget -q LINK_DA_FERRAMENTA`.
 
 
-*   *PICARD* = Conjunto de ferramentas usado para organizar e corrigir arquivos de alinhamento (SAM/BAM) antes da análise de variantes.
-*    *GATK* = "Genome Analysis Toolkit", conjunto de ferramentas que pega os dados alinhados do sequenciamento (BAM) e procura diferenças entre a amostra do paciente e o genoma de referência. 
-*   *ANNOVAR* = É um software de bioinformática usado para anotar e priorizar variantes genéticas, que cruza dados de sequenciamento de DNA com grandes bancos de dados para prever o seu impacto funcional.
+*   **PICARD** = Conjunto de ferramentas usado para **organizar e corrigir** arquivos de alinhamento (SAM/BAM) antes da análise de variantes.
+*    **GATK** = "Genome Analysis Toolkit", conjunto de ferramentas que pega os dados alinhados do sequenciamento (BAM) e **procura diferenças** entre a amostra do paciente e o genoma de referência. 
+*   **ANNOVAR** = É um software de bioinformática usado para **anotar e priorizar** variantes genéticas, que cruza dados de sequenciamento de DNA com grandes bancos de dados para prever o seu **impacto funcional.**
 
 ```bash
   %%bash
@@ -148,10 +148,10 @@ ___
 **5. Baixar bancos de dados**
 
 
-*   *RefGene* = Banco de dados de genes de referência usado pelo ANNOVAR para localizar e descrever onde uma variante está no genoma.
-*   *gnomAD* = Banco de frequência populacional usado para avaliar quão rara ou comum uma variante genética é na população humana.
-*   *Revel* = Preditor in silico utilizado para estimar o potencial patogênico de variantes missense, por meio de scores previamente calculados.
-*   *Clinvar* = Banco de dados clínico que reúne variantes genéticas e suas classificações de significado clínico (Patogênica, provavelmente patogênica, benigna, provavelmente benigna ou VUS)
+*   **RefGene** = Banco de dados de genes de referência usado pelo ANNOVAR para **localizar e descrever** onde uma variante está no genoma.
+*   **gnomAD** = Banco de **frequência populacional** usado para avaliar quão rara ou comum uma variante genética é na população humana.
+*   **Revel** = Preditor in silico utilizado para estimar o **potencial patogênico de variantes missense**, por meio de scores previamente calculados.
+*   **Clinvar** = Banco de dados clínico que reúne variantes genéticas e suas **classificações de significado clínico** (Patogênica, provavelmente patogênica, benigna, provavelmente benigna ou VUS)
 
 ```bash
 
