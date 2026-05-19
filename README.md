@@ -1671,7 +1671,7 @@ echo " Preparando arquivo VCF para anotação..."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 # Verificar conteúdo do VCF
-echo "🧬 Variantes no arquivo: $MeuDrive/Dados/vcf/cap-ngse-b-2019.filtered.vcf"
+echo " Variantes no arquivo: $MeuDrive/Dados/vcf/cap-ngse-b-2019.filtered.vcf"
 
 # Criar diretório de anotação
 mkdir -p "$MeuDrive/Dados/annotation"
@@ -1715,7 +1715,7 @@ ___
 %%bash
 MeuDrive="/content/drive/MyDrive/NOME_DA_SUA_PASTA"
 
-echo "🔬 Executando anotação completa com table_annovar..."
+echo " Executando anotação completa com table_annovar..."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 echo " Executando anotação (pode levar alguns minutos)..."
