@@ -509,13 +509,13 @@ bwa mem -K 100000000 \
 **`-K 100000000`:** Define o tamanho do buffer de processamento para 100 milhões de bases, otimizando a performance.
 
 **`-R "@RG\tID:$SAMPLE\tSM:$SAMPLE\tLB:$Biblioteca\tPL:$Plataforma"`:** Adiciona a informação de "Read Group" ao cabeçalho do arquivo de saída. Isso é crucial para etapas posteriores, como a remoção de duplicatas e a chamada de variantes, pois identifica a amostra, biblioteca e plataforma de sequenciamento.
-> ** Importância:** Read Groups são **obrigatórios** para GATK e outras ferramentas!
+    **⚠️ Importância:** Read Groups são **obrigatórios** para GATK e outras ferramentas!
 
 **`@RG:`** Indica que é uma linha de Read Group.
 
 **`ID:$SAMPLE:`** Identificador único para o grupo de reads, usando o nome da amostra ($SAMPLE).
 
-**`SM:$SAMPLE:** `Nome da amostra ($SAMPLE).
+**`SM:$SAMPLE:`** `Nome da amostra ($SAMPLE).
 
 **`LB:$Biblioteca`:** Nome da biblioteca de sequenciamento ($Biblioteca).
 
