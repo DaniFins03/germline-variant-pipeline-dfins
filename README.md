@@ -322,7 +322,7 @@ for item in "${arquivos_essenciais[@]}"; do
 done
 
 echo ""
-echo "📊 RESUMO: $presentes/$total arquivos presentes"
+echo " RESUMO: $presentes/$total arquivos presentes"
 
 if [ $presentes -eq $total ]; then
     echo " PREPARAÇÃO COMPLETA! Genoma pronto para uso."
@@ -460,7 +460,7 @@ for arquivo in "$R1" "$R2"; do
         zcat "$caminho" | head -12
 
         echo ""
-        echo "📊 Estatísticas do arquivo:"
+        echo " Estatísticas do arquivo:"
         total_linhas=$(zcat "$caminho" | wc -l)
         total_reads=$((total_linhas / 4))
         echo "• Total de linhas: $(printf "%'d" $total_linhas)"
@@ -660,7 +660,7 @@ echo "10. SEQ: Sequência do read"
 echo "11. QUAL: Qualidades da sequência"
 echo ""
 
-echo "📄 Primeiros 10 alinhamentos:"
+echo " Primeiros 10 alinhamentos:"
 samtools view "$MeuDrive/Dados/bam/$SAMPLE.sorted.bam" | head -10  #Aqui, não tá so mostrando o header (não tem o -H). O Head é so pra definir quantas linhas mostrar, não contando com o HEeader, mostrando so de alinhamentos
 
 #OBS: no resultado, o tamanho do fragmento negativo quer dizer que o read 2 leu antes do read 1. O prof usou o Perplexity (IA) para mostrar isso.
@@ -953,7 +953,7 @@ O que faz? Realiza a chamada de variantes e nos dá o arquivo output **VCF**. El
 4. **Genotyping**: Calcula probabilidades de genótipos
 5. **Filtragem**: Aplica filtros de qualidade
 
-Obs: Caso eu queira ver as funcionalidades desta ferramenta, só rodar:
+*Obs:* Caso eu queira ver as funcionalidades desta ferramenta, só rodar:
 ```
 !./gatk-4.1.8.1/gatk HaplotypeCaller
 ```
@@ -1048,7 +1048,7 @@ SAMPLE="cap-ngse-b-2019"
 
 #analisar quantas e que tipos de variantes foram identificadas
 
-echo "📊 Estatísticas detalhadas das variantes..."
+echo " Estatísticas detalhadas das variantes..."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 if [ -f "$MeuDrive/Dados/vcf/$SAMPLE.vcf" ]; then
@@ -1256,7 +1256,7 @@ if [ -f "$MeuDrive/Dados/vcf/$SAMPLE.filtered.vcf" ]; then
         echo "$variante"
 
     else
-        echo "ℹ️ Nenhuma variante disponível para análise detalhada."
+        echo "⚠️ Nenhuma variante disponível para análise detalhada."
     fi
 
 else
@@ -1313,7 +1313,7 @@ Conferir se todos os arquivos necessários para o IGV estão disponíveis, selec
 MeuDrive="/content/drive/MyDrive/NOME_DA_SUA_PASTA"
 SAMPLE="cap-ngse-b-2019"
 
-echo "👁️ Preparação para visualização no IGV..."
+echo " Preparação para visualização no IGV..."
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
 # Verificar arquivos necessários para IGV
@@ -1888,7 +1888,7 @@ else:
             print(f"    Tipo: {row['ExonicFunc.refGene']}")
             print()
     else:
-        print("ℹ️ Nenhuma variante de alta ou média prioridade identificada.")
+        print("⚠️ Nenhuma variante de alta ou média prioridade identificada.")
         print(" Isso pode indicar:")
         print("   • Região analisada é conservada")
         print("   • Variantes são benignas ou comuns")
