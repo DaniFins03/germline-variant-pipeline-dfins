@@ -4,6 +4,7 @@ Iremos montar desde o início um **pipeline para análise de variantes germinati
 
 Lembrando alguns pontos importantes antes de começarmos: 
 * Não se esqueça de customizar o caminho do arquivo a partir da sua realidade de estruturação de pastas!
+* Neste código, apresentamos um pipeline demonstrativo utilizando, inicialmente, a sequência do cromossomo 1 como referência.
 * Este projeto foi baseado em um trabalho de conclusão de curso de uma pós-graduação em bioinformática. Sugestões são sempre bem-vindas!
 
 # **PIPELINE DE ANÁLISE DE VARIANTES GERMINATIVAS**
@@ -207,6 +208,8 @@ mkdir $MeuDrive/referencia_tcc/hg38_tcc
 ___
 
 **7. Baixar o `genoma Hg19` e criar um `.fasta (hg19_tcc.fasta)` dele, e colocar dentro do arquivo `hg19_tcc`**
+
+> *Obs: No contexto deste pipeline, foi utilizado o Hg19 como genoma de referência, porém, não há complicação em utilizar versões mais atuais, contanto que o código possua o "path" de download do arquivo de referência, e seja colocado logo após o ```curl -s```.*
 
 ```bash
 %%bash
@@ -2057,5 +2060,7 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 ```
 
 # **FIM!**
+
+ *Embora o pipeline demonstrado esteja limitado ao cromossomo 1, a lógica geral do fluxo pode ser adaptada para análises em escala genômica, desde que sejam utilizados os arquivos de referência e recursos computacionais adequados.*
 
 Você arrasou! Vamos caminhando juntos neste mundo Bioinformata! ❤️🧬
